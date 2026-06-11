@@ -3,7 +3,47 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Formulário</title>
+    <link rel="stylesheet" href="./Css/styles.css" />
+    <title>Pesquisa Culturama</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <h1>Pesquisa Online</h1>
+    </header>
+    <section>
+      <form action="" method="get">
+        <fieldset>
+          <!-- DADOS PESSOAIS -->
+          <legend>Dados Pessoais</legend>
+
+          <label for="userName">Nome</label>
+          <input type="text" name="userName" required />
+          <br />
+          <label for="userAge">Idade</label>
+          <input type="number" name="userAge" min="12" max="100" required />
+          <br />
+          <label for="birthDate">Data de nascimento</label>
+          <input type="date" name="birthDate" />
+          <br />
+          <label for="userEmail">Email</label>
+          <input type="email" name="userEmail" required />
+          <br />
+          <label for="userPhoneNumber">Telefone</label>
+          <input
+            type="tel"
+            name="userPhoneNumber"
+            pattern="[0-9] {11}"
+            placeholder="DDD+ Número"
+            required
+          />
+          <br />
+          <input type="file" accept="image/*" name="userImage" />
+          <label for="userImage">Upload de foto</label>
+          <br />
+        </fieldset>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </body>
 </html>
