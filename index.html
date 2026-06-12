@@ -116,7 +116,6 @@
             autocomplete="address-level2"
           />
         </fieldset>
-
         <fieldset>
           <legend>Hábitos</legend>
           <p>Redes Sociais:</p>
@@ -183,7 +182,18 @@
             <option value="#FFFFFF">Branco</option>
           </datalist>
         </fieldset>
-
+        <fieldset>
+          <legend>Satisfação:</legend>
+          <label for="satisfication">Qual é o seu nível de satisfação?</label>
+          <select name="userSatisfy" id="satisfication">
+            <option value="" selected disabled>Selecione uma opção...</option>
+            <option value="perfect">Ótima</option>
+            <option value="good">Boa</option>
+            <option value="regular">Regular</option>
+            <option value="bad">Ruim</option>
+          </select>
+          <br />
+        </fieldset>
         <button type="submit">Enviar</button>
       </form>
     </section>
