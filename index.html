@@ -106,7 +106,6 @@
             <option value="SE">Sergipe</option>
             <option value="TO">Tocantins</option>
           </select>
-          <br />
 
           <label for="city">Cidade:</label>
           <input
@@ -150,6 +149,21 @@
           <br />
           <input id="tiktok" type="checkbox" name="userSocial" value="tiktok" />
           <label for="tiktok">Tik Tok</label>
+          <br />
+          <label for="musicStyle">Estilo musical:</label>
+          <input
+            list="styleType"
+            type="text"
+            name="userMusicStyle"
+            id="musicStyle"
+          />
+          <datalist id="styleType">
+            <option value="Rock"></option>
+            <option value="Pop"></option>
+            <option value="Samba"></option>
+            <option value="Sertanejo"></option>
+            <option value="Funk"></option>
+          </datalist>
         </fieldset>
 
         <button type="submit">Enviar</button>
