@@ -183,19 +183,37 @@
           </datalist>
         </fieldset>
         <fieldset>
-          <legend>Satisfação:</legend>
-          <label for="satisfication">Qual é o seu nível de satisfação?</label>
-          <select name="userSatisfy" id="satisfication">
-            <option value="" selected disabled>Selecione uma opção...</option>
-            <option value="perfect">Ótima</option>
-            <option value="good">Boa</option>
-            <option value="regular">Regular</option>
-            <option value="bad">Ruim</option>
-          </select>
-        </fieldset>
-        <fieldset>
-          <legend>Deixe seu comentario:</legend>
-          <label for="comment">Comentário:</label><br />
+          <legend>Satisfação</legend>
+          <p>O que você acha da nossa qualidade de serviço?</p>
+
+          <input
+            type="radio"
+            name="userSatisfy"
+            id="satisfy_perfect"
+            value="perfect"
+          />
+          <label for="satisfy_perfect">Ótima</label><br />
+
+          <input
+            type="radio"
+            name="userSatisfy"
+            id="satisfy_good"
+            value="good"
+          />
+          <label for="satisfy_good">Boa</label><br />
+
+          <input
+            type="radio"
+            name="userSatisfy"
+            id="satisfy_regular"
+            value="regular"
+          />
+          <label for="satisfy_regular">Regular</label><br />
+
+          <input type="radio" name="userSatisfy" id="satisfy_bad" value="bad" />
+          <label for="satisfy_bad">Ruim</label><br />
+          <br />
+          <label for="comment">Escreva sua opinião:</label><br />
           <textarea
             name="userComments"
             id="comment"
