@@ -72,6 +72,16 @@ textarea {
   min-height: 100px;
 }
 
+input[type="tel"],
+input[type="file"] {
+  margin-bottom: 0px;
+}
+
+small {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
 input[type="radio"],
 input[type="checkbox"] {
   width: auto;
